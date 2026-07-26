@@ -131,5 +131,4 @@ function renderExpression(){
         expression.appendChild(span);
 
     }
-    renderExpression();
 }
