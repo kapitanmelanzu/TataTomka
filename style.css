@@ -95,18 +95,23 @@ body{
     font-size:60px;
     font-weight:bold;
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    white-space:nowrap;
+
 }
 
 .expression span{
 
-    display:inline-block;
-
-    margin:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     width:65px;
     height:65px;
-
-    line-height:65px;
 
     border-radius:10px;
 
