@@ -88,3 +88,33 @@ body{
     cursor:pointer;
 
 }
+
+.expression{
+
+    margin:40px 0;
+    font-size:60px;
+    font-weight:bold;
+
+}
+
+.expression span{
+
+    display:inline-block;
+
+    margin:5px;
+
+    width:65px;
+    height:65px;
+
+    line-height:65px;
+
+    border-radius:10px;
+
+}
+
+.locked{
+
+    background:#d93025;
+    color:white;
+
+}
