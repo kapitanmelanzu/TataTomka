@@ -56,7 +56,7 @@ const levels = [
 },
 {
     name:"Poziom 7",
-    objective:"Babcia Tomka",
+    objective:"Babcia Tomka\nM - Mama",
     start:"DT",
     target:"MSDT",
     letters:["D","B","M","S"]
@@ -64,7 +64,7 @@ const levels = [
 {
     name:"Poziom 8",
     objective:"(Znowu) Tomek",
-    start:"SSBTTT",
+    start:"SSBTT",
     target:"SBTTSSBTT",
     letters:["T","B","S"]
 },
