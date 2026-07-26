@@ -3,14 +3,14 @@ const levels = [
 {
     name:"Poziom 0",
     objective:"Stwórz Tatę Tomka",
-    start:"T",
+    start:"",
     target:"TT",
     letters:["T"]
 },
 
 {
     name:"Poziom 1",
-    objective:"Znajdź Tomka",
+    objective:"Znajdź Tomka. Niektóre litery są podane",
     start:"TT",
     target:"STT",
     letters:["S","T"]
@@ -18,7 +18,7 @@ const levels = [
 
 {
     name:"Poziom 2",
-    objective:"Znajdź Wujka Tomka",
+    objective:"Wujek Tomka",
     start:"TT",
     target:"BTT",
     letters:["B","T"]
@@ -26,7 +26,7 @@ const levels = [
 
 {
     name:"Poziom 3",
-    objective:"Znajdź Siostrę Tomka",
+    objective:"Siostra Tomka",
     start:"STT",
     target:"CTSTT",
     letters:["C","T"]
@@ -34,7 +34,7 @@ const levels = [
 
 {
     name:"Poziom 4",
-    objective:"Znajdź Dziadka Tomka",
+    objective:"Dziadek Tomka",
     start:"TT",
     target:"TTT",
     letters:["T","B","S"]
@@ -42,10 +42,44 @@ const levels = [
 
 {
     name:"Poziom 5",
-    objective:"Znajdź Żonę Tomka",
+    objective:"Znajdź Ole",
     start:"BTT",
-    target:"ZSBBTT",
-    letters:["Z","B","S"]
-}
-
+    target:"ŻSBBTT",
+    letters:["Ż","B","S"]
+},
+{
+    name:"Poziom 6",
+    objective:"Kuzyn Tomka",
+    start:"CTT",
+    target:"SBTCTT",
+    letters:["Ż","B","S","T"]
+},
+{
+    name:"Poziom 7",
+    objective:"Babcia Tomka",
+    start:"DT",
+    target:"MSDT",
+    letters:["D","B","M","S"]
+},
+{
+    name:"Poziom 8",
+    objective:"Znowu Tomek",
+    start:"SSBTTT",
+    target:"SBTTSSBTT",
+    letters:["T","B","S"]
+},
+{
+    name:"Poziom 9",
+    objective:"Snejk",
+    start:"TTTT",
+    target:"WSSSTTTT",
+    letters:["B","W","S","T"]
+},
+    {
+    name:"Poziom 10",
+    objective:"Tata Tomka",
+    start:"MA",
+    target:"SIGMA",
+    letters:["S","G","I"]
+},
 ];
