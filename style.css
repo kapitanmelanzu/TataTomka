@@ -123,3 +123,7 @@ body{
     color:white;
 
 }
+
+#objective{
+    white-space: pre-line;
+}
