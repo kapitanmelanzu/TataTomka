@@ -18,8 +18,6 @@ function loadLevel(){
 
     history = [];
 
-    renderExpression();
-
     document.getElementById("levelName").textContent = level.name;
 
     document.getElementById("objective").textContent = level.objective;
@@ -49,6 +47,8 @@ function loadLevel(){
         lettersDiv.appendChild(button);
 
     });
+
+    renderExpression();
 
 }
 
