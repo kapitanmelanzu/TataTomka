@@ -96,7 +96,15 @@ document.getElementById("next").onclick=()=>{
 
 }
 
-loadLevel();
+document.getElementById("startButton").onclick = () => {
+
+    document.getElementById("startScreen").style.display = "none";
+
+    document.getElementById("game").style.display = "block";
+
+    loadLevel();
+
+};
 
 function renderExpression(){
 
