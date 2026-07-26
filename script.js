@@ -68,13 +68,13 @@ document.getElementById("check").onclick=()=>{
 
     if(currentString===level.target){
 
-        message.textContent="✅ Dobrze!";
+        message.textContent="✅ Idealnie!";
 
         document.getElementById("next").disabled=false;
 
     }else{
 
-        message.textContent="❌ To jeszcze nie to.";
+        message.textContent="❌ No chyba nie.";
 
     }
 
@@ -86,8 +86,16 @@ document.getElementById("next").onclick=()=>{
 
     if(currentLevel>=levels.length){
 
-        document.body.innerHTML="<h1 style='text-align:center;margin-top:120px;'>Gratulacje! TT jest z Ciebie dumny.</h1>";
+        document.body.innerHTML = `
+<h1 style="text-align:center;margin-top:120px;">
+    Gratulacje!
+</h1>
 
+<p style="text-align:center;font-size:20px;">
+    Mam nadzieję, że gra ci się spodobała. Oczywiście gra powstała w celach humorystycznych,
+    pomysł wymyśliłem randomowo i pomyślałem, że śmiesznie będzie spróbować zrobić coś takiego.
+</p>
+`;
         return;
 
     }
