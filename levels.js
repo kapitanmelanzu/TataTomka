@@ -10,7 +10,7 @@ const levels = [
 
 {
     name:"Poziom 1",
-    objective:"Znajdź Tomka. Niektóre litery są podane",
+    objective:"Znajdź Tomka\nNiektóre litery są podane",
     start:"TT",
     target:"STT",
     letters:["S","T"]
@@ -18,10 +18,10 @@ const levels = [
 
 {
     name:"Poziom 2",
-    objective:"Wujek Tomka",
+    objective:"Wujek Tomka\nZawsze wybieraj najkrótsze rozwiązanie",
     start:"TT",
     target:"BTT",
-    letters:["B","T"]
+    letters:["B","S"]
 },
 
 {
@@ -63,7 +63,7 @@ const levels = [
 },
 {
     name:"Poziom 8",
-    objective:"Znowu Tomek",
+    objective:"(Znowu) Tomek",
     start:"SSBTTT",
     target:"SBTTSSBTT",
     letters:["T","B","S"]
