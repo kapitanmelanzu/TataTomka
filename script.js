@@ -127,7 +127,6 @@ function renderExpression(){
             span.classList.add("locked");
 
         }
-
         expression.appendChild(span);
 
     }
