@@ -18,7 +18,7 @@ function loadLevel(){
 
     history = [];
 
-    expression.textContent = currentString;
+    renderExpression();
 
     document.getElementById("levelName").textContent = level.name;
 
@@ -42,7 +42,7 @@ function loadLevel(){
 
             currentString=letter+currentString;
 
-            expression.textContent=currentString;
+            renderExpression();
 
         }
 
@@ -58,7 +58,7 @@ document.getElementById("undo").onclick=()=>{
 
     currentString=history.pop();
 
-    expression.textContent=currentString;
+    renderExpression();
 
 }
 
@@ -97,3 +97,31 @@ document.getElementById("next").onclick=()=>{
 }
 
 loadLevel();
+
+function renderExpression(){
+
+    const level = levels[currentLevel];
+
+    const expression = document.getElementById("expression");
+
+    expression.innerHTML = "";
+
+    const locked = level.start.length;
+
+    for(let i=0;i<currentString.length;i++){
+
+        const span = document.createElement("span");
+
+        span.textContent = currentString[i];
+
+        if(i >= currentString.length - locked){
+
+            span.classList.add("locked");
+
+        }
+
+        expression.appendChild(span);
+
+    }
+    renderExpression();
+}
