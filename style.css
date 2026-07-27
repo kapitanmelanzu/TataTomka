@@ -119,10 +119,18 @@ body{
 
 }
 
-.locked{
+.lockedBox{
 
-    background:#d93025;
-    color:white;
+    display:flex;
+    align-items:center;
+
+    background:#a31910;
+
+    border-radius:12px;
+
+    padding:6px 8px;
+
+    gap:6px;
 
 }
 
