@@ -148,7 +148,7 @@ body{
     gap:2px;                 
 }
 
-.locked{
+.expression span.locked{
     background:none;         
     width:auto;
     height:auto;
