@@ -124,20 +124,23 @@ function renderExpression(){
 
     const locked = level.start.length;
 
-    for(let i=0;i<currentString.length;i++){
+    const added = currentString.slice(0, currentString.length - locked);
+    const start = currentString.slice(currentString.length - locked);
+    for(const letter of added){
 
         const span = document.createElement("span");
-
-        span.textContent = currentString[i];
-
-        if(i >= currentString.length - locked){
-
-            span.classList.add("locked");
-
-        }
-
+        span.textContent = letter;
         expression.appendChild(span);
+    }
+    const lockedBox = document.createElement("div");
+    lockedBox.className = "lockedBox";
+
+    for(const letter of start){
+        const span = document.createElement("span");
+        span.textContent = letter;
+        lockedBox.appendChild(span);
 
     }
+    expression.appendChild(lockedBox);
 
 }
