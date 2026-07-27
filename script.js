@@ -173,6 +173,7 @@ document.getElementById("hintButton").onclick = ()=>{
     const hint = document.getElementById("hintText");
 
     hint.textContent = "💡 " + level.hint;
+    hintsUsed++;
 
     hint.style.display="block";
 
