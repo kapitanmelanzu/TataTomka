@@ -1,4 +1,6 @@
 let currentLevel = 0;
+let hintsUsed;
+let totalMistakes = 0;
 let mistakes = 0;
 let currentString = "";
 let hintShown = false;
@@ -82,7 +84,7 @@ document.getElementById("check").onclick=()=>{
 }else{
 
     mistakes++;
-
+    totalMistakes++;
     message.textContent="❌ No chyba nie";
 
         if(mistakes >= 2 && !hintShown){
@@ -112,6 +114,9 @@ document.getElementById("hintText").textContent="";
 <p style="text-align:center;font-size:20px;">
     Mam nadzieję, że gra ci się spodobała. Oczywiście gra powstała w celach humorystycznych,
     pomysł wymyśliłem randomowo i pomyślałem, że śmiesznie będzie spróbować zrobić coś takiego.
+</p>
+<p style="text-align:center;font-size:20px;">
+    Błędy: ${totalMistakes}\nUżyte wskazówki: ${hintsUsed}\n
 </p>
 `;
         return;
