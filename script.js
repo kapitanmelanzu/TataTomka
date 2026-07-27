@@ -1,5 +1,5 @@
 let currentLevel = 0;
-
+let mistakes = 0;
 let currentString = "";
 
 let history = [];
@@ -14,6 +14,13 @@ function loadLevel(){
 
     const level = levels[currentLevel];
 
+    mistakes = 0;
+
+document.getElementById("hintButton").style.display="none";
+
+document.getElementById("hintText").style.display="none";
+
+document.getElementById("hintText").textContent="";
     currentString = level.start;
 
     history = [];
@@ -72,16 +79,29 @@ document.getElementById("check").onclick=()=>{
 
         document.getElementById("next").disabled=false;
 
-    }else{
+}else{
 
-        message.textContent="❌ No chyba nie.";
+    mistakes++;
+
+    message.textContent="❌ No chyba nie";
+
+    if(mistakes >= 2){
+
+        document.getElementById("hintButton").style.display="inline-block";
 
     }
 
 }
 
+}
+
 document.getElementById("next").onclick=()=>{
 
+    document.getElementById("hintButton").style.display="none";
+
+document.getElementById("hintText").style.display="none";
+
+document.getElementById("hintText").textContent="";
     currentLevel++;
 
     if(currentLevel>=levels.length){
@@ -144,3 +164,17 @@ function renderExpression(){
     expression.appendChild(lockedBox);
 
 }
+
+document.getElementById("hintButton").onclick = ()=>{
+
+    const level = levels[currentLevel];
+
+    document.getElementById("hintButton").style.display="none";
+
+    const hint = document.getElementById("hintText");
+
+    hint.textContent = "💡 " + level.hint;
+
+    hint.style.display="block";
+
+};
