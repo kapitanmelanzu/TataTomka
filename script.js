@@ -152,16 +152,21 @@ function renderExpression(){
         span.textContent = letter;
         expression.appendChild(span);
     }
-    const lockedBox = document.createElement("div");
-    lockedBox.className = "lockedBox";
+if(start.length > 0){
 
-    for(const letter of start){
-        const span = document.createElement("span");
-        span.textContent = letter;
-        lockedBox.appendChild(span);
+for(const letter of start){
 
-    }
-    expression.appendChild(lockedBox);
+    const span = document.createElement("span");
+
+    span.textContent = letter;
+
+    span.classList.add("locked");
+
+    expression.appendChild(span);
+
+}
+
+}
 
 }
 
