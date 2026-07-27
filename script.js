@@ -1,7 +1,7 @@
 let currentLevel = 0;
 let mistakes = 0;
 let currentString = "";
-
+let hintShown = false;
 let history = [];
 
 const expression = document.getElementById("expression");
@@ -13,7 +13,7 @@ const message = document.getElementById("message");
 function loadLevel(){
 
     const level = levels[currentLevel];
-
+    hintShown = false;
     mistakes = 0;
 
 document.getElementById("hintButton").style.display="none";
@@ -85,11 +85,9 @@ document.getElementById("check").onclick=()=>{
 
     message.textContent="❌ No chyba nie";
 
-    if(mistakes >= 2){
-
-        document.getElementById("hintButton").style.display="inline-block";
-
-    }
+        if(mistakes >= 2 && !hintShown){
+            document.getElementById("hintButton").style.display="inline-block";
+        }
 
 }
 
@@ -173,7 +171,7 @@ for(const letter of start){
 document.getElementById("hintButton").onclick = ()=>{
 
     const level = levels[currentLevel];
-
+    hintShown = true;
     document.getElementById("hintButton").style.display="none";
 
     const hint = document.getElementById("hintText");
