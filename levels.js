@@ -6,6 +6,7 @@ const levels = [
     start:"",
     target:"TT",
     letters:["T"]
+    hint:"Inicjały \"Tata Tomka\""
 },
 
 {
@@ -14,6 +15,7 @@ const levels = [
     start:"TT",
     target:"STT",
     letters:["S","T"]
+    hint:"Syn Taty Tomka"
 },
 
 {
@@ -22,6 +24,7 @@ const levels = [
     start:"TT",
     target:"BTT",
     letters:["B","S"]
+    hint:"Wujek może być mężem cioci, lub..."
 },
 
 {
@@ -30,6 +33,7 @@ const levels = [
     start:"STT",
     target:"CTSTT",
     letters:["C","T"]
+    hint:"Jedno w góre, jedno w dół"
 },
 
 {
@@ -38,6 +42,7 @@ const levels = [
     start:"TT",
     target:"TTT",
     letters:["T","B","S"]
+    hint:"Tung Tung Tung Sahur"
 },
 
 {
@@ -46,6 +51,7 @@ const levels = [
     start:"BTT",
     target:"ŻSBBTT",
     letters:["Ż","B","S"]
+    hint:"Żona Tomka"
 },
 {
     name:"Poziom 6",
@@ -53,13 +59,15 @@ const levels = [
     start:"CTT",
     target:"SBTCTT",
     letters:["Ż","B","S","T"]
+    hint:"Max 3 litery"
 },
 {
     name:"Poziom 7",
-    objective:"Babcia Tomka\nM - Mama",
+    objective:"Babcia Tomka",
     start:"DT",
     target:"MSDT",
     letters:["D","B","M","S"]
+    hint:"M to Mama"
 },
 {
     name:"Poziom 8",
@@ -67,6 +75,7 @@ const levels = [
     start:"SSBTT",
     target:"SBTTSSBTT",
     letters:["T","B","S"]
+    hint:"Przy każdym kroku sprawdzaj kogo masz"
 },
 {
     name:"Poziom 9",
@@ -74,6 +83,7 @@ const levels = [
     start:"TTTT",
     target:"WSSSTTTT",
     letters:["B","W","S","T"]
+    hint:"Wąż Tomka"
 },
     {
     name:"Poziom 10",
@@ -81,5 +91,6 @@ const levels = [
     start:"MA",
     target:"SIGMA",
     letters:["S","G","I"]
+    hint:"🗿"
 },
 ];
