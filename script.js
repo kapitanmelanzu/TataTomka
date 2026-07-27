@@ -133,39 +133,30 @@ document.getElementById("startButton").onclick = () => {
 };
 
 function renderExpression(){
-
     const level = levels[currentLevel];
-
     const expression = document.getElementById("expression");
-
     expression.innerHTML = "";
-
     const locked = level.start.length;
-
     const added = currentString.slice(0, currentString.length - locked);
     const start = currentString.slice(currentString.length - locked);
-    for(const letter of added){
 
+    for(const letter of added){
         const span = document.createElement("span");
         span.textContent = letter;
         expression.appendChild(span);
     }
-if(start.length > 0){
 
-for(const letter of start){
-
-    const span = document.createElement("span");
-
-    span.textContent = letter;
-
-    span.classList.add("locked");
-
-    expression.appendChild(span);
-
-}
-
-}
-
+    if(start.length > 0){
+        const box = document.createElement("div");
+        box.classList.add("lockedBox");
+        for(const letter of start){
+            const span = document.createElement("span");
+            span.textContent = letter;
+            span.classList.add("locked");
+            box.appendChild(span);
+        }
+        expression.appendChild(box);
+    }
 }
 
 document.getElementById("hintButton").onclick = ()=>{
