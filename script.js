@@ -1,5 +1,5 @@
 let currentLevel = 0;
-let hintsUsed;
+let hintsUsed = 0;
 let totalMistakes = 0;
 let mistakes = 0;
 let currentString = "";
@@ -116,7 +116,7 @@ document.getElementById("hintText").textContent="";
     pomysł wymyśliłem randomowo i pomyślałem, że śmiesznie będzie spróbować zrobić coś takiego.
 </p>
 <p style="text-align:center;font-size:20px;">
-    Błędy: ${totalMistakes}\nUżyte wskazówki: ${hintsUsed}\n
+    Błędy: ${totalMistakes}<br>Użyte wskazówki: ${hintsUsed}
 </p>
 `;
         return;
