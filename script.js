@@ -87,7 +87,7 @@ document.getElementById("check").onclick=()=>{
     totalMistakes++;
     message.textContent="❌ No chyba nie";
 
-        if(mistakes >= 2 && !hintShown){
+        if(mistakes >= 1 && !hintShown){
             document.getElementById("hintButton").style.display="inline-block";
         }
 
