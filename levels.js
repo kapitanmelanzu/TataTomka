@@ -33,7 +33,7 @@ const levels = [
     start:"STT",
     target:"CTSTT",
     letters:["C","T"],
-    hint:"Jedno w góre, jedno w dół"
+    hint:"Spróbuj znaleźć Tatę Tomka"
 },
 
 {
@@ -51,7 +51,7 @@ const levels = [
     start:"BTT",
     target:"ŻSBBTT",
     letters:["Ż","B","S"],
-    hint:"Żona Tomka"
+    hint:"Brat mojego brata to ja"
 },
 {
     name:"Poziom 6",
@@ -75,7 +75,7 @@ const levels = [
     start:"SSBTT",
     target:"SBTTSSBTT",
     letters:["T","B","S"],
-    hint:"Przy każdym kroku sprawdzaj kogo masz"
+    hint:"Masz syna kuzyna, spróbuj zdobyć wujka Tomka"
 },
 {
     name:"Poziom 9",
